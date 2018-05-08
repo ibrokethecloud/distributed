@@ -1,10 +1,10 @@
 var config = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGE_ID"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.PROJECT_ID+".firebaseapp.com",
+  databaseURL: "https://"+process.env.PROJECT_ID+".firebaseio.com",
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.PROJECT_ID+".appspot.com",
+  messagingSenderId: process.env.MESSAGE_ID
 };
 
 firebase.initializeApp(config);
